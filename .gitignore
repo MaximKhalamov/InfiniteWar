@@ -1,0 +1,66 @@
+# === Java and Gradle ===
+*.class
+*.log
+*.jar
+*.war
+*.ear
+
+/build/
+/out/
+/bin/
+/.gradle/
+/.idea/
+/.vscode/
+.gradle/
+**/.DS_Store
+
+# Gradle wrapper logs and caches
+.gradle/
+!gradle/wrapper/gradle-wrapper.jar
+!gradle/wrapper/gradle-wrapper.properties
+
+# === OS files ===
+.DS_Store
+Thumbs.db
+
+# === IDEs ===
+*.iml
+*.ipr
+*.iws
+*.swp
+.idea/
+.vscode/
+
+# === Minecraft specific ===
+run/
+debug/
+logs/
+*.launch
+*.bat
+*.sh
+
+# === Architectury cache (optional) ===
+.cache/
+
+# === Forge/MCP ===
+eclipse/
+.mcp/
+
+# === Fabric remap cache ===
+.remap/
+
+# === Build artifacts ===
+/common/build/
+/fabric/build/
+/forge/build/
+/build/
+
+# === Temp files ===
+*.tmp
+*.bak
+*.swp
+
+# === User/environment config ===
+local.properties
+.env
+
