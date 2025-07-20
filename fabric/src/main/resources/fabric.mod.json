@@ -16,10 +16,10 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.quazarx.infinitewar.fabric.ExampleModFabric"
+      "com.quazarx.infinitewar.fabric.InfiniteWarFabric"
     ],
     "client": [
-      "com.quazarx.infinitewar.fabric.client.ExampleModFabricClient"
+      "com.quazarx.infinitewar.fabric.client.InfiniteWarFabricClient"
     ]
   },
   "mixins": [

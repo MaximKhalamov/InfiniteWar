@@ -1,10 +1,13 @@
 package com.quazarx.infinitewar.fabric;
 
+import com.quazarx.infinitewar.fabric.item.ModItemFabricFactory;
 import net.fabricmc.api.ModInitializer;
 
-import com.quazarx.infinitewar.ExampleMod;
+import com.quazarx.infinitewar.InfiniteWar;
 
-public final class ExampleModFabric implements ModInitializer {
+public final class InfiniteWarFabric implements ModInitializer {
+    InfiniteWar modInstance = new InfiniteWar(new ModItemFabricFactory());
+
     @Override
     public void onInitialize() {
         // This code runs as soon as Minecraft is in a mod-load-ready state.
@@ -12,6 +15,7 @@ public final class ExampleModFabric implements ModInitializer {
         // Proceed with mild caution.
 
         // Run our common setup.
-        ExampleMod.init();
+//        modInstance.createItems();
+        modInstance.init();
     }
 }
