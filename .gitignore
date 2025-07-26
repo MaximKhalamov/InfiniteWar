@@ -65,11 +65,13 @@ local.properties
 .env
 
 # === Resources Copypasta ===
-/fabric/src/main/resources/assets
-/fabric/src/main/resources/data
+/resources_generated/
 
-/forge/src/main/resources/assets
-/forge/src/main/resources/data
+/fabric/src/main/resources/assets/*
+/fabric/src/main/resources/data/*
 
-/common/src/main/resources/assets
-/common/src/main/resources/data
+/forge/src/main/resources/assets/*
+/forge/src/main/resources/data/*
+
+/common/src/main/resources/assets/*
+/common/src/main/resources/data/*
