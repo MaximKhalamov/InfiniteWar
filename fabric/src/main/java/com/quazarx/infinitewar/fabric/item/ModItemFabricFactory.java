@@ -14,7 +14,7 @@ public class ModItemFabricFactory implements ModItemFactory {
     @Override
     public void createFood(FoodDefinition foodDefinition) {
         FoodComponent.Builder foodComponentBuilder = new FoodComponent.Builder()
-                .hunger(foodDefinition.amount)
+                .hunger(foodDefinition.hungerRestores)
                 .saturationModifier(foodDefinition.saturation);
 
         if(foodDefinition.isAlwaysEatable) foodComponentBuilder.alwaysEdible();

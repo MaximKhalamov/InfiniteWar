@@ -4,10 +4,7 @@ import com.quazarx.infinitewar.InfiniteWar;
 import com.quazarx.infinitewar.definition.FoodDefinition;
 import com.quazarx.infinitewar.item.ModItemFactory;
 import net.minecraft.item.FoodComponent;
-import net.minecraft.item.FoodComponents;
 import net.minecraft.item.Item;
-import net.minecraft.registry.Registries;
-import net.minecraft.registry.Registry;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -21,7 +18,7 @@ public class ModItemForgeFactory implements ModItemFactory {
     public void createFood(FoodDefinition foodDefinition) {
         RegistryObject<Item> FOOD = ITEMS.register(foodDefinition.name,
                 () -> new Item(new Item.Settings().food(new FoodComponent.Builder()
-                        .hunger(foodDefinition.amount)
+                        .hunger(foodDefinition.hungerRestores)
                         .saturationModifier(foodDefinition.saturation)
                         .build())));
     }

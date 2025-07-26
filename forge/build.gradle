@@ -48,6 +48,7 @@ processResources {
 shadowJar {
     configurations = [project.configurations.shadowBundle]
     archiveClassifier = 'dev-shadow'
+    relocate 'com.fasterxml.jackson', 'com.quazarx.infinitewar.shadowed.jackson'
 }
 
 remapJar {

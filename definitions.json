@@ -1,0 +1,11 @@
+[ {
+  "name" : "diamond_apple",
+  "type" : "item",
+  "subtype" : "food",
+  "engName" : "Diamond apple",
+  "genRecipe" : true,
+  "genModel" : true,
+  "hungerRestores" : 6,
+  "saturation" : 10.0,
+  "isAlwaysEatable" : false
+} ]

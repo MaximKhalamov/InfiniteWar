@@ -34,6 +34,7 @@ subprojects {
     dependencies {
         minecraft "net.minecraft:minecraft:$rootProject.minecraft_version"
         mappings "net.fabricmc:yarn:$rootProject.yarn_mappings:v2"
+        implementation 'com.fasterxml.jackson.core:jackson-databind:2.17.0'
     }
 
     java {
