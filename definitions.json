@@ -8,4 +8,15 @@
   "hungerRestores" : 6,
   "saturation" : 10.0,
   "isAlwaysEatable" : false
+}, {
+  "name" : "my_block",
+  "type" : "block",
+  "subtype" : "block",
+  "engName" : "",
+  "genRecipe" : true,
+  "genModel" : true,
+  "hardness" : 1.5,
+  "resistance" : 6.0,
+  "requiresTool" : true,
+  "minableTools" : [ ]
 } ]

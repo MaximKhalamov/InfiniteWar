@@ -36,8 +36,8 @@ run/
 debug/
 logs/
 *.launch
-*.bat
-*.sh
+# *.bat
+# *.sh
 
 # === Architectury cache (optional) ===
 .cache/
@@ -62,7 +62,7 @@ eclipse/
 
 # === User/environment config ===
 local.properties
-.env
+/scripts/env.sh
 
 # === Resources Copypasta ===
 /resources_generated/

@@ -1,5 +1,6 @@
 package com.quazarx.infinitewar;
 
+import com.quazarx.infinitewar.definition.BlockDefinition;
 import com.quazarx.infinitewar.definition.DefinitionFactory;
 import com.quazarx.infinitewar.definition.FoodDefinition;
 import com.quazarx.infinitewar.item.ModItemFactory;
@@ -20,7 +21,11 @@ public final class InfiniteWar {
                 .getFoodDefinition("diamond_apple", 6, 10F);
         diamondAppleDefinition.engName = "Diamond apple";
 
+        BlockDefinition blockDefinition = DefinitionFactory
+                .getBlockDefinition("my_block", 1.5f, 6.0f, true);
+
         modItemFactory.createFood(diamondAppleDefinition);
+        modItemFactory.createBlock(blockDefinition);
     }
 
     public void init() {

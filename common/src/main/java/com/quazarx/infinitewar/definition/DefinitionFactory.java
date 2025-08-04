@@ -25,6 +25,33 @@ public class DefinitionFactory {
         return foodDefinition;
     }
 
+    public static ItemDefinition getItemDefinition(String name){
+        ItemDefinition itemDefinition = new ItemDefinition();
+
+        itemDefinition.name = name;
+
+        definitionList.add(itemDefinition);
+
+        return itemDefinition;
+    }
+
+    public static BlockDefinition getBlockDefinition(String name,
+                                                     float hardness,
+                                                     float resistance,
+                                                     boolean requiresTool){
+        BlockDefinition blockDefinition = new BlockDefinition();
+
+        blockDefinition.name = name;
+
+        blockDefinition.hardness = hardness;
+        blockDefinition.resistance = resistance;
+        blockDefinition.requiresTool = requiresTool;
+
+        definitionList.add(blockDefinition);
+
+        return blockDefinition;
+    }
+
     public static void writeJSONToFile(){
         ObjectMapper objectMapper = new ObjectMapper();
         ArrayNode jsonArray = objectMapper.createArrayNode();

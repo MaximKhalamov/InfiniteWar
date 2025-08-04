@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model" : "infinitewar:block/my_block" }
+  }
+}

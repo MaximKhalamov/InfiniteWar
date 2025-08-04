@@ -24,6 +24,7 @@ public final class InfiniteWarForge {
 
 //        modEventBus.addListener(this::commonSetup);
 
+        modItemForgeFactory.BLOCKS.register(modEventBus);
         modItemForgeFactory.ITEMS.register(modEventBus);
 
 //        infiniteWar.register(modEventBus);
@@ -38,6 +39,6 @@ public final class InfiniteWarForge {
 
 //        context.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
 
-
+        
     }
 }
